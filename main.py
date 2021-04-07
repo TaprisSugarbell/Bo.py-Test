@@ -1,4 +1,3 @@
-from pytube import YouTube
 from modles.gen import *
 from modles.pytb import *
 from telegram import InlineKeyboardMarkup, InlineKeyboardButton
@@ -12,7 +11,7 @@ def start(update, context):
             [InlineKeyboardButton(text='Descargar Video', callback_data='pytb')],
             [InlineKeyboardButton(text='Generador de tarjeta', callback_data='gen')],
             [InlineKeyboardButton(
-                text='Repositorio', url='https://github.com/TaprisSugarbell/Bo.py/tree/master')],
+                text='Repositorio', url='https://github.com/TaprisSugarbell/Bo.py-Test/tree/main')],
         ])
     )
 

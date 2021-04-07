@@ -1,0 +1,26 @@
+{
+    "name": "Bot.py Test",
+    "description": "Este bot es multifunciones...",
+    "logo": "https://i.imgur.com/S4Zlx0G.png",
+    "keywords": [
+        "Codez",
+        "Nuclear",
+        "Telegram Bot",
+        "SayuOgiwara"
+    ],
+    "repository": "https://github.com/TaprisSugarbell/Bo.py-Test",
+    "success_url": "https://telegram.dog/SayuCodez",
+    "env": {
+        "TOKEN": {
+            "description": "Tu Token de Telegram de @BotFather",
+            "value": ""
+        }
+    },
+    "addons": [],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
