@@ -7,7 +7,7 @@ from telegram.ext import ConversationHandler
 INPUTpy = 0
 
 def pytbcommand(update, context):
-    update.message.reply_text('Enviame texto para hacerlo QR')
+    update.message.reply_text('Enviame link para descargar video')
     return INPUTpy
 
 def pytb_callback_handler(update, context):
@@ -28,8 +28,8 @@ def send_pytb(filename, chat):
         action=ChatAction.UPLOAD_VIDEO,
         timeout=None
         )
-    chat.send_photo(
-        photo=open(filename, 'rb')
+    chat.send_video(
+        video=open(filename, 'rb')
     )
     os.unlink(filename)
 
