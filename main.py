@@ -8,8 +8,8 @@ def start(update, context):
     update.message.reply_text(
         text='Hola bienvenido a Bopy\n/gen - Genera tarjeta\n/pytb - Descargar Video',
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton(text='Descargar Video', callback_data='pytb')],
             [InlineKeyboardButton(text='Generador de tarjeta', callback_data='gen')],
+            [InlineKeyboardButton(text='Descargar Video', callback_data='pytb')],
             [InlineKeyboardButton(
                 text='Repositorio', url='https://github.com/TaprisSugarbell/Bo.py-Test/tree/main')],
         ])
